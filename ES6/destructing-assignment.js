@@ -11,7 +11,6 @@ function getTempOfTmrw(avgTemperatures) {
 
 console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
 
-
 // ES6: Use Destructuring Assignment to Assign Variables from Nested Objects
 const LOCAL_FORECAST = {
   today: { min: 72, max: 83 },
@@ -22,10 +21,17 @@ console.log(maxOfTomorrow);
 */
 function getMaxOfTmrw(forecast) {
   "use strict";
-  // change code below this line
-  const maxOfTomorrow = undefined; // change this line
-  // change code above this line
+  const {tomorrow: {max: maxOfTomorrow}} = forecast;
   return maxOfTomorrow;
 }
 
 console.log(getMaxOfTmrw(LOCAL_FORECAST)); // should be 84.6
+
+// ES6: Use Destructuring Assignment to Assign Variables from Arrays
+let a = 8, b = 6;
+(() => {
+  "use strict";
+  [a, b] = [b, a]
+})();
+console.log(a); // should be 6
+console.log(b); // should be 8
