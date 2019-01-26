@@ -59,7 +59,7 @@ const stats = {
 };
 const half = (function() {
   "use strict";
-  return function half(max, min) {
+  return function half({max, min}) {
     return (stats.max + stats.min) / 2.0;
   };
 })();
