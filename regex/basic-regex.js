@@ -36,3 +36,20 @@ let result = chewieQuote.match(chewieRegex);
 let username = "JackOfAllTrades";
 let userCheck = /\D{2,}/i;
 let result = userCheck.test(username);
+
+// look for multiple whitespace characters in a string.
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g;
+let result = sample.match(countWhiteSpace);
+
+// Check for All or None
+let american = "color";
+let british = "colour";
+let rainbowRegex= /colou?r/;
+rainbowRegex.test(american); // Returns true
+rainbowRegex.test(british); // Returns true
+
+// capture groups in regex to match numbers that are repeated only three times in a string, each separated by a space. 
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/;
+let result = reRegex.test(repeatNum);
