@@ -136,11 +136,11 @@ console.log(getArrayOfUsers(users));
 
 // Modify an Array Stored in an Object
 let user = {
-  name: 'Kenneth',
+  name: 'Sasan',
   age: 28,
   data: {
-    username: 'kennethCodesAllDay',
-    joinDate: 'March 26, 2016',
+    username: 'SasanCodesAllDay',
+    joinDate: 'December 26, 2018',
     organization: 'freeCodeCamp',
     friends: [
       'Sam',
@@ -148,8 +148,8 @@ let user = {
       'Tomo'
     ],
     location: {
-      city: 'San Francisco',
-      state: 'CA',
+      city: 'Charlotte',
+      state: 'NC',
       country: 'USA'
     }
   }
