@@ -11,8 +11,8 @@ this code will validate all of them.
 */
 
 function telephoneCheck(str) {
-  var regex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/gm;
-  return regex.test(str);
+  var validatorRegex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/gm;
+  return validatorRegex.test(str);
 }
 
 telephoneCheck("555-555-5555");
