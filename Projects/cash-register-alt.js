@@ -25,8 +25,6 @@ function checkCashRegister(price, cash, cid) {
      } else {
        return col;
      }
-    
-
 
   }, []);
   return result.length > 0 && change === 0 ? result : 'INSUFFICIENT_FUNDS';
